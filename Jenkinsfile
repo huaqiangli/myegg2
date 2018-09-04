@@ -3,8 +3,9 @@ pipeline {
   stages {
     stage('checkout code') {
       steps {
-        sh '''echo "checkout the code"
-ls -l '''
+        echo "checkout the code"
+        checkout scm
+        sh 'ls -l'
       }
     }
     stage('build') {
