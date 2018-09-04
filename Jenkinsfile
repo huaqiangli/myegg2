@@ -4,7 +4,7 @@ pipeline {
     stage('checkout code') {
       steps {
         echo "checkout the code"
-        checkout scm
+        //checkout scm
         sh 'ls -l'
       }
     }
