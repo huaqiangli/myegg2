@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('checkout code') {
       steps {
-        echo "checkout the code from test branch"
+        echo "checkout the code from maser branch"
         //checkout scm
         git 'https://github.com/huaqiangli/myegg2.git'
         sh 'ls -l'
